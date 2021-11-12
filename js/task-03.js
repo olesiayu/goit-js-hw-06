@@ -16,8 +16,9 @@ const images = [
 const list = document.querySelector(`ul`);
 
 const markup = images
-  .map((image) => `<li><img src = ${image.url} alt = ${image.alt} width = 320></li>`)
+  .map((image) => `<li><img src = ${image.url} alt = "${image.alt}" width = 320 height = 213></li>`)
   .join("");
 
   list.insertAdjacentHTML("afterbegin", markup);
 
+// http://joxi.ru/eAO3LyYi6lddQA некорректно отрендерено значение атрибута
